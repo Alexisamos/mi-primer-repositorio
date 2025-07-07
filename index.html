@@ -1,9 +1,73 @@
- <!DOCTYPE html>
- <html>
- <head>
- <title>Mi Primer Proyecto</title>
- </head>
- <body>
- <h1>¡Hola Mundo desde GitHub!</h1>
- </body>
- </html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Primer Proyecto con Git/GitHub</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        header {
+            background-color: #24292e;
+            color: white;
+            padding: 20px;
+            border-radius: 5px;
+            text-align: center;
+        }
+        h1 {
+            color: #0366d6;
+        }
+        footer {
+            margin-top: 40px;
+            text-align: center;
+            font-size: 0.9em;
+            color: #586069;
+        }
+        .git-info {
+            background-color: white;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 20px;
+            border-left: 4px solid #0366d6;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>¡Hola Mundo desde GitHub!</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Este es mi primer proyecto versionado</h2>
+            <p>Estoy aprendiendo a usar Git y GitHub para control de versiones.</p>
+            
+            <div class="git-info">
+                <h3>Comandos útiles:</h3>
+                <ul>
+                    <li><code>git init</code> - Inicializa un repositorio</li>
+                    <li><code>git add .</code> - Prepara los cambios</li>
+                    <li><code>git commit -m "mensaje"</code> - Guarda los cambios</li>
+                    <li><code>git push</code> - Sube los cambios a GitHub</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Creado por [Tu Nombre] - Práctica de Control de Versiones</p>
+        <p>Última actualización: <span id="fecha"></span></p>
+    </footer>
+
+    <script>
+        // Mostrar fecha actual
+        document.getElementById('fecha').textContent = new Date().toLocaleDateString();
+    </script>
+</body>
+</html>
